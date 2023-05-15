@@ -6,11 +6,11 @@ var fruits = [
 ];
 
 var searchByName = (fruits, fruit) => {
-  return fruits.find((fruits) => fruits.name.toLowerCase() == fruit);
+  return fruits.find((fruits) => fruits.name.toLowerCase() === fruit);
 };
 
 var searchByKey = (fruits, key, fruit) => {
-  return fruits.find((fruits) => fruits[key].toLowerCase() == fruit);
+  return fruits.find((fruits) => fruits[key].toLowerCase() === fruit);
 };
 
 console.log(searchByName(fruits, "apple"));
